@@ -16,9 +16,9 @@
    Text
  } from 'react-native';
 import { decrement, increment } from './Features/Slices/CounterSlice';
-
+import { AddUser,AddUsers } from './Features/Slices/UserSlice';
 import {fetchUsers} from './Features/Tunks/UserThunk'
-
+import {ManyUser}  from './Userjson'
  const  App =()=>{
    const dispatch = useDispatch();
    const states = useSelector(state=>state);
@@ -38,6 +38,18 @@ import {fetchUsers} from './Features/Tunks/UserThunk'
                 
             </Button>
        
+
+
+            <Button title="ADD NEW USer Data" onPress={() => dispatch(AddUser({
+                    "avatar":"https://reqres.in/img/faces/7-image.jpg",
+                    "email":"traceydw.ramos@reqres.in",
+                    "first_name":"singh",
+                    "id":7,
+                    "last_name":"Ramos"
+                })
+            )}/> 
+
+          <Button title="many New users " onPress={() => dispatch(AddUsers(ManyUser))}/> 
        </View>
        </SafeAreaView>
      );
