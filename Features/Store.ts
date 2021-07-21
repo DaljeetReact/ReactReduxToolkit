@@ -1,11 +1,18 @@
-import {configureStore} from '@reduxjs/toolkit';
-import {UserSlice,CountSlice} from './Slices';
+import {configureStore,getDefaultMiddleware} from '@reduxjs/toolkit';
+import {UserSlice,CountSlice,SagaSliceReducer} from './Slices';
+import createSagaMiddleware from 'redux-saga'
+import {watcherSaga} from './ReduxSaga/watcherSaga'
+
+const sagaMiddleware = createSagaMiddleware();
+const middleware = [sagaMiddleware, ...getDefaultMiddleware()] as const;
 
 export const myStore =  configureStore({
     reducer:{
         counter:CountSlice,
-        users:UserSlice
-    }
-});
+        users:UserSlice,
+        sagaUSers:SagaSliceReducer
+    },
+    middleware
+}); 
 
-
+sagaMiddleware.run(watcherSaga);

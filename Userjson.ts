@@ -41,4 +41,12 @@ export const  ManyUser = [
        "id":16,
        "last_name":"Ramos"
     }
- ]
+ ];
+
+ export const singleUSer ={
+   "avatar":"https://reqres.in/img/faces/7-image.jpg",
+   "email":"traceydw.ramos@reqres.in",
+   "first_name":"singh",
+   "id":7,
+   "last_name":"Ramos"
+};
