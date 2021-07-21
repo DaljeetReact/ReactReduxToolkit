@@ -1,3 +1,19 @@
+# About repo
+<pre>
+ In this repo i have done with adding the following thing on each branch as following
+1) on master i have create a simple counter with Reduxtoolkit 
+2) on ReduxTunk i have use the funcationality of Tunk how to use thunks 
+3) createEntityAdapter i have used the the createEntityAdapter to perfom CRUD on default state objec
+</pre>
+## UseFull Links or source of learning
+<pre>
+https://hybridheroes.de/blog/2021-01-08-redux-toolkit-react-native/
+
+https://soyoung210.github.io/redux-toolkit/api/createEntityAdapter
+
+https://redux.js.org/tutorials/fundamentals/part-3-state-actions-reducers
+</pre>
+
 # ReactReduxToolkit
  in this project i have setup the toolkit in Feature folder which contain these files
 
