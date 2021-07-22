@@ -20,11 +20,11 @@ ReduxSaga
 ├── Handlers      => it will Handle all  API's are attached with handler. these are generator functions will handle all the promise 
 |   |               
 │   └── userHandler.ts
-└── watcherSaga.ts  
+└── watcherSaga.ts 
+</pre>
 
 <b>watcherSaga.ts<b> => This will run in background and watch all the action dispatch. Whenever action dispatch it will call the
                         Api attached handler 
-</pre>
 
 # Examples  of code 
 
@@ -41,6 +41,8 @@ export const fetchUsersApi=()=>{
 }
 </code>
 </pre>
+
+End with Api request
 
 ## Handlers
 <pre>
@@ -62,7 +64,7 @@ export function* handleGetUSer(){
 </code>
 </pre>
 
-
+End with Api Handler request
 
 ## watcherSaga.JS
 <pre>
@@ -80,7 +82,7 @@ export function* watcherSaga() {
   
 </code>
 </pre>
-
+End with Api Handler Watcher
 
 # Setup link middleware to store
 
