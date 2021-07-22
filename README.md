@@ -11,7 +11,7 @@ Code Snip =>  https://codesandbox.io/s/redux-toolkit-saga-stoic-euler-cjhgx-0by7
 main doc =>  https://redux-saga.js.org/docs/introduction/GettingStarted
 
 yarn add redux-saga
-<pre>
+</pre>
 
 <pre>
 ReduxSaga
