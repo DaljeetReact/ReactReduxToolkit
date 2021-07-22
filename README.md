@@ -46,3 +46,7 @@ export const myStore =  configureStore({
     }
 });
 </code>
+
+# The final product image
+
+![alt text](https://github.com/DaljeetReact/ReactReduxToolkit/blob/reduxSaga/lastimg.png)
