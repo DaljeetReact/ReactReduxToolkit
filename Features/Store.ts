@@ -10,7 +10,7 @@ export const myStore =  configureStore({
     reducer:{
         counter:CountSlice,
         users:UserSlice,
-        sagaUSers:SagaSliceReducer
+        sagaUsers:SagaSliceReducer
     },
     middleware
 }); 
